@@ -1,0 +1,78 @@
+﻿syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.admindesk";
+option java_outer_classname = "AdminDeskProto";
+option objc_class_prefix = "AD";
+
+package admindesk;
+
+// The AdminDesk service definition.
+service AdminDesk {
+  
+  // If id is specified then get specific Subjects.
+  rpc GetSubjects (IdRequest) returns (SubjectsReply) {}
+  
+  // If id is specified then get specific Classes.
+  rpc GetClasses (IdRequest) returns (ClassesReply) {}
+  
+  // If id is specified then get specific Themes.
+  rpc GetTestNames (IdRequest) returns (TestNamesReply) {}
+  
+  // IdRequest.id is required.
+  rpc GetTest (IdRequest) returns (TestReply) {}
+
+}
+
+// The request message containing or not the id.
+message IdRequest {
+  // this is not necessary to be filled
+  string id = 1;
+}
+
+// Has id and name.
+message SimpleObject {
+  string id = 1;
+  string name = 2;
+}
+
+// The response containing the subjects.
+message SubjectsReply {
+   // id -> 01, 02, 03, ...
+   // name -> Math, History, ...
+  repeated SimpleObject subjects = 1;
+}
+
+// The response containing the classes.
+message ClassesReply {
+   // id -> 01, 02, 03, ..., 12
+   // name -> 1 grade, 2 grade, ...
+  repeated SimpleObject classes = 1;
+}
+
+// The response containing the names of tests.
+message TestNamesReply {
+   // id -> 01, 02, 03, ...
+   // name -> Some theme's name
+  repeated SimpleObject themes = 1;
+}
+
+// Has text and is_correct.
+message Answer {
+  string text = 1;
+  bool is_correct = 2;
+}
+
+// Has id, text and answers.
+message Question {
+  string id = 1;
+  string text = 2;
+  repeated Answer answers = 3;
+}
+
+// The response containing the questions.
+message TestReply {
+  string id = 1;
+  string name = 2;
+  repeated Question questions = 3;
+}
