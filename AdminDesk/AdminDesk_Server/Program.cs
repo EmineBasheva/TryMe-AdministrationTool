@@ -21,14 +21,14 @@ namespace AdminDesk_Server
             };
             server.Start();
 
-            Console.WriteLine("AdminDesk server listening on port " + port);
+            Console.WriteLine("AdminDesk server listening on port: " + server.Ports.GetEnumerator().Current.Port);
             //Console.WriteLine("Press any key to stop the server...");
             //Console.Read();
 
             TimeSpan interval = new TimeSpan(0, 20, 0); // 20 minutes
-            Console.WriteLine("Server will be alive 20 seconds.");
+            Console.WriteLine("SERVER WILL BE ALIVE 20 MINUTES.");
             Thread.Sleep(interval);
-            Console.WriteLine("Server shut down.");
+            Console.WriteLine("SERVER SHUT DOWN.");
 
             server.ShutdownAsync().Wait();
         }
