@@ -21,7 +21,7 @@ namespace AdminDesk_Server
             };
             server.Start();
 
-            Console.WriteLine("AdminDesk server listening on port: " + server.Ports.GetEnumerator().Current.Port);
+            Console.WriteLine("AdminDesk server listening on port: " + port);
             //Console.WriteLine("Press any key to stop the server...");
             //Console.Read();
 
