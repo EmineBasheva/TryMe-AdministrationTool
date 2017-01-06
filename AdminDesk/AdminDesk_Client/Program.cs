@@ -25,8 +25,8 @@ namespace AdminDesk_Client
             Console.WriteLine("Number of questions in the test: " + testsRequest.Questions.Count);
 
             channel.ShutdownAsync().Wait();
-            Console.WriteLine("Press any key to exit...");
-            Console.Read();
+            //Console.WriteLine("Press any key to exit...");
+            //Console.Read();
         }
     }
 }
