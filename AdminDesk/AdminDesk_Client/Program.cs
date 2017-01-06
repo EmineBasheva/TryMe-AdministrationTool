@@ -8,9 +8,15 @@ namespace AdminDesk_Client
     {
         static void Main()
         {
-            Channel channel = new Channel("127.0.0.1:50051", ChannelCredentials.Insecure);
+            Console.WriteLine("Start AdminDesk_Client...");
+
+            var hostname = "trymeadmintool.apphb.com"; // "127.0.0.1";
+
+            Channel channel = new Channel(hostname + ":50051", ChannelCredentials.Insecure);
 
             var client = new Admindesk.AdminDesk.AdminDeskClient(channel);
+
+            Console.WriteLine("Get items...");
 
             var subjectsRequest = client.GetSubjects(new IdRequest());
             Console.WriteLine("Number of subjects: " + subjectsRequest.Subjects.Count);
@@ -24,7 +30,7 @@ namespace AdminDesk_Client
             var testsRequest = client.GetTest(new IdRequest() { Id = "001" });
             Console.WriteLine("Number of questions in the test: " + testsRequest.Questions.Count);
 
-            channel.ShutdownAsync().Wait();
+            channel.ShutdownAsync();//.Wait();
             //Console.WriteLine("Press any key to exit...");
             //Console.Read();
         }

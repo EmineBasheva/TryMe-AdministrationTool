@@ -10,18 +10,18 @@ namespace AdminDesk_Server
 
         public static void Main(string[] args)
         {
-            var hostname = "localhost";
+            var hostname = "trymeadmintool.apphb.com"; // "localhost";
             var strPort = Environment.GetEnvironmentVariable("PORT");
             var port = Convert.ToInt32(strPort);
 
             Server server = new Server
             {
                 Services = { Admindesk.AdminDesk.BindService(new AdminDeskServer()) },
-                Ports = { new ServerPort(hostname, port, ServerCredentials.Insecure) }
+                Ports = { new ServerPort(hostname, Port, ServerCredentials.Insecure) }
             };
             server.Start();
 
-            Console.WriteLine("AdminDesk server listening on port: " + port);
+            Console.WriteLine("AdminDesk server listening on port: " + Port);
             //Console.WriteLine("Press any key to stop the server...");
             //Console.Read();
 
