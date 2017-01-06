@@ -26,7 +26,7 @@ namespace AdminDesk_Client
 
             channel.ShutdownAsync().Wait();
             Console.WriteLine("Press any key to exit...");
-            Console.ReadKey();
+            Console.Read();
         }
     }
 }
