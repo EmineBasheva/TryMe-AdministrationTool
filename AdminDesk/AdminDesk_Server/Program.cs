@@ -1,5 +1,6 @@
 ﻿using Grpc.Core;
 using System;
+using System.ComponentModel;
 using System.Threading;
 
 namespace AdminDesk_Server
@@ -10,9 +11,11 @@ namespace AdminDesk_Server
 
         public static void Main(string[] args)
         {
+            //BackgroundWorker worker = new BackgroundWorker();
+
             var hostname = "trymeadmintool.apphb.com"; // "localhost";
-            var strPort = Environment.GetEnvironmentVariable("PORT");
-            var port = Convert.ToInt32(strPort);
+            //var strPort = Environment.GetEnvironmentVariable("PORT");
+            //var port = Convert.ToInt32(strPort);
 
             Server server = new Server
             {
