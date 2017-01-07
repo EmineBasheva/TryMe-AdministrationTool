@@ -10,7 +10,7 @@ namespace AdminDesk_Client
         {
             Console.WriteLine("Start AdminDesk_Client...");
 
-            var hostname = "trymeadmintool.apphb.com"; // "127.0.0.1";
+            var hostname = "127.0.0.1"; // "trymeadmintool.apphb.com";
 
             Channel channel = new Channel(hostname + ":50051", ChannelCredentials.Insecure);
 
