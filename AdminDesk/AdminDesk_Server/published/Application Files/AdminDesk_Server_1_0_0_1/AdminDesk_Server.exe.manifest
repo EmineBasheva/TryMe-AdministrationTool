@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="AdminDesk_Server.exe" version="1.0.0.1" publicKeyToken="4ea81787d07d19f6" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="AdminDesk_Server" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="AdminDesk_Server.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AdminDesk.dll" size="27648">
+      <assemblyIdentity name="AdminDesk" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>/XnXSSHnWpocuAynbYz96vlGnBpWxGKr+Q/6EBbiWBg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AdminDesk_Server.exe" size="8128">
+      <assemblyIdentity name="AdminDesk_Server" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>iQ4G0KqUpZm3YI8iq8YETOPIMB7sTTmq9HhfnJUUGL4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Google.Protobuf.dll" size="261632">
+      <assemblyIdentity name="Google.Protobuf" version="3.1.0.0" publicKeyToken="A7D26565BAC4D604" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>dwoGIu3GbC9fBIOf5DDJCSSFUlWidqd8PMVey8hV7Vo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Grpc.Core.dll" size="465920">
+      <assemblyIdentity name="Grpc.Core" version="1.0.0.0" publicKeyToken="D754F35622E28BAD" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>spXtiIoW6JYy/RUQSvm0+gltqGC3gE9gV/Ur2aWgYws=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Interactive.Async.dll" size="185600">
+      <assemblyIdentity name="System.Interactive.Async" version="3.0.0.0" publicKeyToken="94BC3704CDDFC263" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>DrlvSBaewXYyVEBXNgPUgZLyjdqxs6FlwEgLHSOgPeM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="AdminDesk_Server.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="grpc_csharp_ext.x64.dll" size="2054144">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bJugJaXuir6nsTN9Ld9qcK2Rqeqmb9WckenxXyqaNQI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="grpc_csharp_ext.x86.dll" size="1635328">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+vYMVAbAJNz1xQj6Uj0DedN186bh3F4o6GJXnQwfbl0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="libgrpc_csharp_ext.x64.dylib" size="2351560">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2Bn7aQhiC2xiqDTSZzVVNd6t/9hLLKTMU6B4DJ+ULks=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="libgrpc_csharp_ext.x64.so" size="8343192">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xF2IF0WjL/jk6k8ofEJeONCAwte03gb0wRsSePcppKo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="libgrpc_csharp_ext.x86.dylib" size="2084980">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>omLt/I5YEDfjrN/alNpvi352KSqZgSnuEiBvykg/FO0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="libgrpc_csharp_ext.x86.so" size="6144772">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3Wyhgn5XOBIRKSvkcpMf4Ase7ykF2DP9anidSNRkEv4=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=EMINKA-PC\Eminka" issuerKeyHash="dc766297f25a7609754c41e05e04ad8658d02308" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>YbT0hnNHeYwp03hGM9UmyxikXFyItFI28QBuWCKNbeM=</DigestValue></Reference></SignedInfo><SignatureValue>AE6St08q0Bbo2GP4QA0XPLTmQlKRZ9YEVdnR26V+EthsgfnrX0sL5f5MPdvooHopVe+d5d4h1hDpP8RuPUg+DD3/j/Bh8MQLgO2YrraKdcZMOTMWyz/TlokCLUB2KuqUNv2OGyjY+82tNR6DEUcDM0wjDqE81CfIjfPlIj7bKzE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>vZeIIZsw54+OAFre3FQI9ehEnWkr5SOW95x3x2oa4sLLEdUy/B7Miw1hvo4tPqRW52/eeRNrFvzqY9txIfHJXG71XhjrikF1rgmwJPBSevJrejZQp/h9ttXmDsceq4iXyl341hCaX2N1BmF7EeNzhAgCgrqTfB12LeD8e8dMel8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e36d8d22586e00f13652b4885c5ca418cb26d5334678d3298c79477386f4b461" Description="" Url=""><as:assemblyIdentity name="AdminDesk_Server.exe" version="1.0.0.1" publicKeyToken="4ea81787d07d19f6" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=EMINKA-PC\Eminka</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>sWAxqSR7PQUH//aFqJ4y7KtmD0BN2s6Jn8zUacmo+rw=</DigestValue></Reference></SignedInfo><SignatureValue>bfWN7Jk1u84vExqQkD0WNdTtGQGpfS26j54CABme2YmvA4ItOqenMwRerCYnhvnpFhZjaWlKAQuelX8T/bYbfeU06xVkhTFTwMsKB0euwwYPethyQXfREJIjbrUAN3MeI/zSpk8auirAdnU3ZayUgaKFEs1EqkHPGQ6e/rfpMAY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>vZeIIZsw54+OAFre3FQI9ehEnWkr5SOW95x3x2oa4sLLEdUy/B7Miw1hvo4tPqRW52/eeRNrFvzqY9txIfHJXG71XhjrikF1rgmwJPBSevJrejZQp/h9ttXmDsceq4iXyl341hCaX2N1BmF7EeNzhAgCgrqTfB12LeD8e8dMel8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQRWmnLPVE55hPiAb2xgsk0DANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDHiAARQBNAEkATgBLAEEALQBQAEMAXABFAG0AaQBuAGsAYTAeFw0xNzAxMDcwMjI0MTZaFw0xODAxMDcwODI0MTZaMCsxKTAnBgNVBAMeIABFAE0ASQBOAEsAQQAtAFAAQwBcAEUAbQBpAG4AawBhMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC9l4ghmzDnj44AWt7cVAj16ESdaSvlI5b3nHfHahriwssR1TL8HsyLDWG+ji0+pFbnb955E2sW/Opj23Eh8clcbvVeGOuKQXWuCbAk8FJ68mt6NlCn+H221eYOxx6riJfKXfjWEJpfY3UGYXsR43OECAKCupN8HXYt4Px7x0x6XwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBALhVc+GZEb/o4ExlwBj2DIYv64S6QL6Dh8inIxtNgFKpCOdnhk8RD+6B7ipL6Z6xWXJV6POEBJTJpe3/SdhVIGRYcUyeLKAV0a08BnIHj5Iy9W2sNKl9AiqZ3otxQgHTZT3fxXhUt3a729eFdDm2tWqzYaYNxg1hPyttmBad64WL</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
